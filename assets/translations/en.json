@@ -1,0 +1,21 @@
+{
+  "AuthPage": {
+    "AppBar": "Welcome",
+    "LoginTitle": "Sign in to your account",
+    "UsernamePlaceholder": "Enter your name",
+    "UsernameValidator": "Username is required",
+    "LoginButton": "Sign In",
+    "RetryButton": "Try Again"
+  },
+  "ChatPage": {
+    "AppBar": "Chat:",
+    "MessagePlaceholder": "Type your message...",
+    "ReconnectButton": "Reconnect"
+  },
+  "ErrorMessageWidget": {
+    "Title": "Error",
+    "ServerException": "Something went wrong on our side. Please try again shortly.",
+    "AuthException": "Authentication failed. Please check your details and try again.",
+    "OtherException": "Unable to connect. Check your internet and try again."
+  }
+}
