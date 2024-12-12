@@ -4,7 +4,7 @@ import 'package:chat/domain/bloc/chat_bloc/chat_event.dart';
 import 'package:chat/domain/bloc/chat_bloc/chat_state.dart';
 import 'package:chat/domain/repositories/chat_repository.dart';
 import 'package:chat/locator.dart';
-import 'package:chat/models/user.dart';
+import 'package:chat/domain/entities/user.dart';
 import 'package:chat/presentation/widgets/error_message_widget.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';

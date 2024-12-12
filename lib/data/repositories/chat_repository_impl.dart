@@ -1,10 +1,11 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:developer';
+import 'package:chat/data/models/chat_message_model.dart';
 import 'package:chat/domain/repositories/chat_repository.dart';
-import 'package:chat/models/chat_message.dart';
-import 'package:chat/models/exceptions.dart';
-import 'package:chat/models/user.dart';
+import 'package:chat/domain/entities/chat_message.dart';
+import 'package:chat/domain/entities/exceptions.dart';
+import 'package:chat/domain/entities/user.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 class ChatRepositoryImpl extends ChatRepository {
@@ -45,8 +46,7 @@ class ChatRepositoryImpl extends ChatRepository {
     log('Received from server: $data');
 
     try {
-      ChatMessage receivedMessage = ChatMessage.fromJson(json.decode(data));
-
+      final receivedMessage = ChatMessageModel.fromJson(json.decode(data));
       if (!_messagesController!.isClosed) {
         _messagesController!.add(receivedMessage);
       }
@@ -84,8 +84,7 @@ class ChatRepositoryImpl extends ChatRepository {
     }
 
     try {
-      var messageJson = json.encode(chatMessage.toJson());
-
+      var messageJson = json.encode(ChatMessageModel.fromEntity(chatMessage).toJson());
       log('Sending to server: $messageJson');
       _webSocketChannel!.sink.add(messageJson);
     } catch (e) {

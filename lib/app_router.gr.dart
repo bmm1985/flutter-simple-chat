@@ -9,7 +9,7 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i3;
-import 'package:chat/models/user.dart' as _i5;
+import 'package:chat/domain/entities/user.dart' as _i5;
 import 'package:chat/presentation/pages/auth_page.dart' as _i1;
 import 'package:chat/presentation/pages/chat_page.dart' as _i2;
 import 'package:flutter/material.dart' as _i4;

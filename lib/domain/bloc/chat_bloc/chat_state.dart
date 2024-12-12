@@ -1,4 +1,4 @@
-import 'package:chat/models/chat_message.dart';
+import 'package:chat/domain/entities/chat_message.dart';
 
 sealed class ChatState {}
 

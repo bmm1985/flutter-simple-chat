@@ -1,4 +1,4 @@
-import 'package:chat/models/exceptions.dart';
+import 'package:chat/domain/entities/exceptions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 

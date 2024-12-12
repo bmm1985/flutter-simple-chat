@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:chat/domain/bloc/chat_bloc/chat_event.dart';
 import 'package:chat/domain/bloc/chat_bloc/chat_state.dart';
 import 'package:chat/domain/repositories/chat_repository.dart';
-import 'package:chat/models/chat_message.dart';
+import 'package:chat/domain/entities/chat_message.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ChatBloc extends Bloc<ChatEvent, ChatState> {

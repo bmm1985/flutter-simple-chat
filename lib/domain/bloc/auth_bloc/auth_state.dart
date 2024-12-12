@@ -1,4 +1,4 @@
-import 'package:chat/models/user.dart';
+import 'package:chat/domain/entities/user.dart';
 
 abstract class AuthState {}
 

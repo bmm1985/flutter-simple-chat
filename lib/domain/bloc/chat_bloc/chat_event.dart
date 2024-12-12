@@ -1,5 +1,5 @@
-import 'package:chat/models/chat_message.dart';
-import 'package:chat/models/user.dart';
+import 'package:chat/domain/entities/chat_message.dart';
+import 'package:chat/domain/entities/user.dart';
 
 sealed class ChatEvent {}
 
